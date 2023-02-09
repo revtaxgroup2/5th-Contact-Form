@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <title>Welcome To Revtex</title>
+    <style rel="stylesheet">
+        * {
+    margin: 0;
+    padding: 0;
+}
+    .header img{
+    width: 300px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="top-area text-center">
+      <div class="container">
+        <div class="header">
+          <img src="./logo.png" alt="">
+          <h3>
+            WE KNOW THE LAWS!
+          <br />
+            KNOW YOUR RIGHTS AS A PROPERTY TAX PAYER!
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-area pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="right-side mb-4 text-center">
+              <iframe src="https://www.youtube.com/embed/JCwcr-HEEZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="left-side ">
+              <form id="myform"  target="_blank" action="https://formsubmit.co/lcagle@revtaxgroup.com" method="POST">
+                <input type="hidden" name="_next" value="https://revtaxgroup2.github.io/THanks/">
+                <div class="mb-4">
+                  <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
+                </div>
+                <div class="mb-4">
+                  <input type="tel" name="phone" maxlength="12" id="telle" class="form-control" placeholder="Enter Phone Number" required>
+                </div>
+                <div class="mb-4">
+                  <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="Property-Tax-Loan" value="Cheeked">
+                  <label class="form-check-label" for="exampleCheck1">Property Tax Loan</label>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="Property-Tax-Protesting" value="Cheeked">
+                  <label class="form-check-label" for="exampleCheck1">Property Tax Protesting</label>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="Property-Tax-Refund" value="Cheeked">
+                  <label class="form-check-label" for="exampleCheck1">Property Tax Refund</label>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
+             </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tele = document.querySelector('#telle');
+
+     tele.addEventListener('keyup', function(e){
+     if (event.key != 'Backspace' && (tele.value.length === 3 || tele.value.length === 7)){
+     tele.value += '-';}
+      });
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
